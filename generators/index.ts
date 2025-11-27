@@ -1,5 +1,5 @@
 import { Field, LanguageId, OutputFormat } from "../types";
-import { generateJavaClass, generateJavaRecord } from "./java";
+import { generateJavaClass, generateJavaRecord, generateJavaBuilder } from "./java";
 import { generatePythonDict, generatePythonDataclass, generatePydanticModel } from "./python";
 
 type GeneratorFunction = (className: string, fields: Field[]) => string;
@@ -8,6 +8,7 @@ const GENERATOR_MAP: Record<LanguageId, Record<string, GeneratorFunction>> = {
     java: {
         class: generateJavaClass,
         record: generateJavaRecord,
+        builder: generateJavaBuilder,
     },
     python: {
         dict: (_, fields) => generatePythonDict(fields),
