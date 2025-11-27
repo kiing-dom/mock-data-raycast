@@ -143,10 +143,14 @@ export default function Command() {
       actions={
         <ActionPanel>
           <ActionPanel.Section title="Generate">
-            <Action title="Generate & Preview" onAction={handleGenerate} shortcut={{
-              macOS: { modifiers: ["cmd"], key: "g"},
-              Windows: { modifiers: ["ctrl"], key: "g"}
-            }} />
+            <Action
+              title="Generate & Preview"
+              onAction={handleGenerate}
+              shortcut={{
+                macOS: { modifiers: ["cmd"], key: "g" },
+                Windows: { modifiers: ["ctrl"], key: "g" },
+              }}
+            />
           </ActionPanel.Section>
 
           <ActionPanel.Section title="Fields">
