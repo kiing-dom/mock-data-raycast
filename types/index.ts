@@ -6,10 +6,11 @@ export interface Field {
 }
 
 export type Language = {
-    id: "java" | "python";
+    id: string;
     name: string;
     icon: IconType;
 }
 
+export type LanguageId = "java" | "python";
 export type FieldType = "string" | "integer" | "boolean" | "date" | "array";
 export type OutputFormat = "class" | "record" | "dict" | "dataclass" | "pydantic";
