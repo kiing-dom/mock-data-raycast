@@ -6,7 +6,7 @@ export const LANGUAGES: Language[] = [
   { id: "java", name: "Java", icon: FaJava },
   { id: "python", name: "Python", icon: FaPython },
   { id: "javascript", name: "JavaScript", icon: SiJavascript },
-  { id: "javascript", name: "TypeScript", icon: SiTypescript },
+  { id: "typescript", name: "TypeScript", icon: SiTypescript },
 ] as const;
 
 export const OUTPUT_FORMATS = {
